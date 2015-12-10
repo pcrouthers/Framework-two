@@ -7,6 +7,7 @@ Bower - http://bower.io
 Gulp - https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 
 Command Line:
+
 $bower init
 (lays out project name, description and version etc)
 
