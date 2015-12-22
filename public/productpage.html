@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> Foundation 6 Framework</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+	<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+		<button class="menu-icon" type="button" data-toggle></button>
+		<div class="title-bar-title">Menu</div>
+	</div>
+
+	<div class="top-bar" id="main-menu">
+		<div class="top-bar-left">
+			<ul class="dropdown menu" data-dropdown-menu>
+				<li class="menu-text">Base</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+				<li class="has-submenu">
+					<a href="#">Product</a>
+					<ul class="submenu menu vertical" data-submenu>
+						<li><a href="productlisting.html">Listing Page</a></li>
+						<li><a href="productpage.html">Single Product</a></li>
+
+					</ul>
+				</li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="#">Basket</a></li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<!-- BREADCRUMB -->
+	<div class="row columns">
+		<nav aria-label="You are here:" role="navigation">
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li class="disabled">Category</li>
+				<li>
+					<span class="show-for-sr">Current: </span> Brand
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- MAIN PRODUCT WITH THUMBNAILS & DESCRIPTION-->
+	<div class="row">
+		<div class="medium-6 columns">
+			<img class="thumbnail" src="http://placehold.it/650x350">
+			<div class="row small-up-4">
+				<div class="column">
+					<img class="thumbnail" src="http://placehold.it/250x200">
+				</div>
+				<div class="column">
+					<img class="thumbnail" src="http://placehold.it/250x200">
+				</div>
+				<div class="column">
+					<img class="thumbnail" src="http://placehold.it/250x200">
+				</div>
+				<div class="column">
+					<img class="thumbnail" src="http://placehold.it/250x200">
+				</div>
+			</div>
+		</div>
+		<div class="medium-6 large-5 columns">
+			<h3>My Awesome Product</h3>
+			<p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in.</p>
+			<label>Size
+				<select>
+					<option value="husker">Small</option>
+					<option value="starbuck">Medium</option>
+					<option value="hotdog">Large</option>
+					<option value="apollo">Yeti</option>
+				</select>
+			</label>
+			<div class="row">
+				<div class="small-3 columns">
+					<label for="middle-label" class="middle">Quantity</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" id="middle-label" placeholder="One fish two fish">
+				</div>
+			</div>
+			<a href="#" class="button large expanded">Buy Now</a>
+			<div class="small secondary expanded button-group">
+				<a class="button">Facebook</a>
+				<a class="button">Twitter</a>
+				<a class="button">Yo</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRODUCT SPEC AND REVIEWS -->
+	<div class="row column large-up-4">
+		<ul class="tabs" data-tabs id="example-tabs">
+			<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">OVERVIEW</a></li>
+			<li class="tabs-title"><a href="#panel2">DESCRIPTION</a></li>
+			<li class="tabs-title"><a href="#panel3">REVIEWS</a></li>
+		</ul>
+
+		<div class="tabs-content" data-tabs-content="example-tabs">
+			<div class="tabs-panel is-active" id="panel1">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut neque felis. Maecenas posuere lectus quis mollis hendrerit. Nunc eu ullamcorper leo. Aenean ultricies erat id porttitor varius. Sed semper enim porta, finibus erat et, malesuada quam.
+					Sed a pretium urna, condimentum dictum metus. Cras non commodo purus. In sagittis iaculis sollicitudin. Vestibulum mollis sed magna ut congue. Maecenas sed tempus tortor, vitae lobortis turpis. Nam urna massa, convallis at libero in, finibus finibus
+					elit. Vivamus ultricies posuere nulla, in placerat felis ultricies id. Pellentesque fermentum erat ut tristique semper. Maecenas sed nulla magna. Duis at metus elementum tellus venenatis scelerisque. Duis suscipit felis ac nibh placerat, non auctor
+					dui pulvinar.</p>
+			</div>
+			<div class="tabs-panel" id="panel2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut neque felis. Maecenas posuere lectus quis mollis hendrerit. Nunc eu ullamcorper leo. Aenean ultricies erat id porttitor varius. Sed semper enim porta, finibus erat et, malesuada quam.
+					Sed a pretium urna, condimentum dictum metus. Cras non commodo purus. In sagittis iaculis sollicitudin. Vestibulum mollis sed magna ut congue. Maecenas sed tempus tortor, vitae lobortis turpis. Nam urna massa, convallis at libero in, finibus finibus
+					elit. Vivamus ultricies posuere nulla, in placerat felis ultricies id. Pellentesque fermentum erat ut tristique semper. Maecenas sed nulla magna. Duis at metus elementum tellus venenatis scelerisque. Duis suscipit felis ac nibh placerat, non auctor
+					dui pulvinar. Fusce molestie pulvinar quam vitae porttitor. Phasellus egestas sodales urna aliquet mollis. Vivamus viverra quis diam eget lacinia. Nam ullamcorper et elit et lobortis. Quisque eget nisl mollis, scelerisque nisl in, commodo elit. Nullam
+					egestas, nisl eu scelerisque elementum, dolor dui tempor ante, quis elementum libero arcu nec tellus. Maecenas et metus urna. Cras quam leo, accumsan dignissim placerat ut, varius sed elit. In tempus eros sit amet libero maximus pulvinar. Fusce blandit
+					egestas quam varius ullamcorper. Phasellus ut ligula vitae nisl gravida lobortis. Fusce quis dapibus ante. Nullam quis velit eu leo malesuada suscipit non accumsan neque. Nulla at lorem id mauris malesuada laoreet. Vestibulum ante ipsum primis in
+					faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vitae sapien at urna elementum faucibus. Nullam pulvinar sollicitudin nunc, a fringilla erat dictum sed. Fusce ut luctus metus, ac efficitur enim. Nam eleifend libero sed dignissim suscipit.
+					Ut tristique sapien at ultrices suscipit. Curabitur vel metus turpis. In et tortor lectus. Morbi aliquet, leo et sollicitudin egestas, neque nisl bibendum mi, eu vulputate purus ante sed purus. Pellentesque habitant morbi tristique senectus et netus
+					et malesuada fames ac turpis egestas. Donec lacus leo, convallis eu ipsum nec, faucibus porttitor quam. In hac habitasse platea dictumst.</p>
+			</div>
+			<div class="tabs-panel" id="panel3">
+				<p>This is the customer ratings of the product</p>
+			</div>
+		</div>
+		<br>
+		<h5> Recently viewed products</h5>
+		<div class="row large-up-7">
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="callout">
+					<div class="image-wrapper overlay-slide-in-left">
+						<img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&amp;wid=300&amp;fmt=png-alpha&amp;resMode=bicub&amp;op_sharpen=1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- TOP FOOTER -->
+	<footer class="footer">
+		<div class="row">
+			<div class="small-12 medium-6 large-5 columns">
+				<p class="logo"><i class="fi-shield"></i> BRAND NAME</p>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					<a href="#">Blog</a>
+					<a href="#">Pricing</a>
+					<a href="#">About</a>
+					<a href="#">Faq</a>
+					<a href="#">Contact</a>
+				</p>
+				<p class="copywrite">Copywrite © 2015</p>
+			</div>
+			<div class="small-12 medium-6 large-4 columns">
+				<ul class="contact">
+					<li>
+						<p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p>
+					</li>
+					<li>
+						<p><i class="fi-telephone"></i>+1-656-453-9966</p>
+					</li>
+					<li>
+						<p><i class="fi-mail"></i>contact@emperor.com</p>
+					</li>
+				</ul>
+			</div>
+			<div class="small-12 medium-12 large-3 columns">
+				<p class="about">About Brand</p>
+				<p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
+				<ul class="inline-list social">
+					<a href="#"><i class="fi-social-facebook"></i></a>
+					<a href="#"><i class="fi-social-twitter"></i></a>
+					<a href="#"><i class="fi-social-linkedin"></i></a>
+					<a href="#"><i class="fi-social-github"></i></a>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.js">
+	</script>
+</body>
+
+</html>
