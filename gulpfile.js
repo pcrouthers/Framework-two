@@ -17,7 +17,8 @@ gulp.task('styles', function() {
     ])
     .pipe(sass({
       includePaths: [
-        './bower_components/foundation-sites/scss'
+        './bower_components/foundation-sites/scss',
+        './bower_components/motion-ui'
       ]
     }))
     .pipe(concat('app.css'))
@@ -41,12 +42,13 @@ gulp.task('scripts', function() {
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./public/js'))
 
-    return gulp.src('./bower_components/modernizr/src/Modernizr.js')
+  return gulp.src('./bower_components/modernizr/src/Modernizr.js')
     .pipe(gulp.dest('./public/js'));
+
 });
 
-gulp.task('watch', function(){
-    gulp.watch('./assets/styles/**/*.scss', ['styles']);
+gulp.task('watch', function() {
+  gulp.watch('./assets/styles/**/*.scss', ['styles']);
 });
 
-gulp.task('default',['styles','scripts']);
+gulp.task('default', ['styles', 'scripts']);

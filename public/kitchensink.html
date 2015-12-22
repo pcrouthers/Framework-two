@@ -15,170 +15,369 @@
 </head>
 
 <body>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- OFF CANVAS CONTENT -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close="">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div>the content of the page needs to have wrappers</div>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
 
-  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
-  </div>
-
-  <div class="top-bar" id="main-menu">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">Base</li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-        <li class="has-submenu">
-          <a href="#">Product</a>
-          <ul class="submenu menu vertical" data-submenu>
-            <li><a href="productlisting.html">Listing Page</a></li>
-            <li><a href="productpage.html">Single Product</a></li>
-
-          </ul>
-        </li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="#">Basket</a></li>
-      </ul>
-    </div>
-  </div>
-  <br>
-
-
-  <div class="expanded row">
-    <div class="medium-9 large-10 medium-push-3 large-push-2 columns">
-      <h3>Accordion</h3>
-      <div class="row align-stretch">
-        <div class="columns">
-          <ul class="accordion" data-accordion role="tablist">
-            <li class="accordion-item is-active">
-              <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-              <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
-              <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-              <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                Content For Panel 1
-              </div>
-            </li>
-            <li class="accordion-item">
-              <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-              <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
-              <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-              <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
-                Content For Panel 1
-              </div>
-            </li>
-          </ul>
+        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
         </div>
-        <div class="columns">
 
-          This is an accordion
+        <div class="top-bar" id="main-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">Base</li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+              <li class="has-submenu">
+                <a href="#">Product</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="productlisting.html">Listing Page</a></li>
+                  <li><a href="productpage.html">Single Product</a></li>
 
+                </ul>
+              </li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="#">Basket</a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+
+
+        <div class="expanded row">
+          <div class="medium-9 large-7 medium-push-3 large-push-2 columns">
+            <h3>Accordion</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="accordion" data-accordion role="tablist">
+                  <li class="accordion-item is-active">
+                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                    <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
+                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                    <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                      Content For Panel 1
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                    <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
+                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                    <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
+                      Content For Panel 1
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <h3>Form</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <form>
+                  <label>Input Label
+                    <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
+                  </label>
+                  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+                  <label>
+                    How many puppies?
+                    <input type="number" value="100">
+                  </label>
+                  <label>
+                    What books did you read over summer break?
+                    <textarea placeholder="None"></textarea>
+                  </label>
+                  <label>Select Menu
+                    <select>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                  </label>
+                  <div class="row">
+                    <fieldset class="large-6 columns">
+                      <legend>Choose Your Favorite</legend>
+                      <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
+                      <label for="pokemonRed">Red</label>
+                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+                      <label for="pokemonBlue">Blue</label>
+                      <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+                      <label for="pokemonYellow">Yellow</label>
+                    </fieldset>
+                    <fieldset class="large-6 columns">
+                      <legend>Check these out</legend>
+                      <input id="checkbox1" type="checkbox">
+                      <label for="checkbox1">Checkbox 1</label>
+                      <input id="checkbox2" type="checkbox">
+                      <label for="checkbox2">Checkbox 2</label>
+                      <input id="checkbox3" type="checkbox">
+                      <label for="checkbox3">Checkbox 3</label>
+                    </fieldset>
+                  </div>
+                  <div class="row">
+                    <div class="small-3 columns">
+                      <label for="middle-label" class="right middle">Label</label>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-label">$</span>
+                    <input class="input-group-field" type="url">
+                    <a class="input-group-button button">Submit</a>
+                  </div>
+                </form>
+
+                <h3>Error States</h3>
+                <form>
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <label class="error">Error
+                        <input type="text" class="error" />
+                      </label>
+                      <small class="error">Invalid entry</small>
+                    </div>
+                    <div class="large-6 columns error">
+                      <label class="error">Another Error
+                        <input type="text" class="error" />
+                      </label>
+                      <small class="error">Invalid entry</small>
+                    </div>
+                  </div>
+                  <textarea class="error" placeholder="Message..."></textarea>
+                  <small class="error">Invalid entry</small>
+                </form>
+              </div>
+
+            </div>
+            <h3>Labels</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <span class="secondary label">Secondary Label</span>
+                <span class="success label">Success Label</span>
+                <span class="alert label">Alert Label</span>
+                <span class="warning label">Warning Label</span>
+              </div>
+
+            </div>
+            <h3>Side Navigation</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="side-nav">
+                  <li class="active"><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <h3>Pagination</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                  <li class="pagination-previous disabled">Previous
+                    <span class="show-for-sr">page</span>
+                  </li>
+                  <li class="current">
+                    <span class="show-for-sr">You're on page</span> 1</li>
+                  <li><a href="#" aria-label="Page 2">2</a></li>
+                  <li><a href="#" aria-label="Page 3">3</a></li>
+                  <li><a href="#" aria-label="Page 4">4</a></li>
+                  <li class="ellipsis" aria-hidden="true"></li>
+                  <li><a href="#" aria-label="Page 12">12</a></li>
+                  <li><a href="#" aria-label="Page 13">13</a></li>
+                  <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <h3>Table</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th width="200">Table Header</th>
+                      <th width="200">Table Header</th>
+                      <th width="150">Table Header</th>
+                      <th width="150">Table Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            <h3>Thumbnails</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+              </div>
+
+            </div>
+            <h3> Off Canvas Menu </h3>
+            <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+
+            <h3>Tabs</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <ul class="tabs" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                  <div class="tabs-panel is-active" id="panel1">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl
+                      ut dapibus.
+                    </p>
+                  </div>
+                  <div class="tabs-panel" id="panel2">
+                    <p>r neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <h3> Breadcrumbs</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li class="disabled">Gene Splicing</li>
+                    <li>
+                      <span class="show-for-sr">Current: </span> Cloning
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <h3> Callouts</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <div class="callout primary">
+                  <h5>This is a secondary panel</h5>
+                  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                </div>
+
+                <div class="alert callout" data-closable>
+                  <h5>This is Important!</h5>
+                  <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <h3> Buttons</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <div class="button-group">
+                  <a class="button">One</a>
+                  <a class="button">Two</a>
+                  <a class="button">Three</a>
+                </div>
+                <br>
+                <div class="small button-group">
+                  <a class="button">Small</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                <br>
+                <div class="button-group">
+                  <a class="secondary button">View</a>
+                  <a class="success button">Edit</a>
+                  <a class="warning button">Share</a>
+                  <a class="alert button">Delete</a>
+                </div>
+                <br>
+                <div class="secondary button-group">
+                  <a class="button">Harder</a>
+                  <a class="button">Better</a>
+                  <a class="button">Faster</a>
+                  <a class="button">Stronger</a>
+                </div>
+                <br>
+                <div class="expanded button-group">
+                  <a class="button">Expanded</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                <br>
+                <div class="stacked-for-small button-group">
+                  <a class="button">How</a>
+                  <a class="button">Low</a>
+                  <a class="button">Can</a>
+                  <a class="button">You</a>
+                  <a class="button">Go</a>
+                </div>
+                <br>
+                <div class="button-group">
+                  <a class="button">Primary Action</a>
+                  <a class="dropdown button arrow-only">
+                    <span class="show-for-sr">Show menu</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h3>Tooltip</h3>
+            <p>
+              The
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect,
+              and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+            </p>
+
+            <!-- END OF OFF CANVAS WRAPPER -->
+
+          </div>
         </div>
       </div>
-      <h3>Form</h3>
-      <div class="row align-stretch">
-        <div class="columns">
-          <form>
-            <label>Input Label
-              <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
-            </label>
-            <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-            <label>
-              How many puppies?
-              <input type="number" value="100">
-            </label>
-            <label>
-              What books did you read over summer break?
-              <textarea placeholder="None"></textarea>
-            </label>
-            <label>Select Menu
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </label>
-            <div class="row">
-              <fieldset class="large-6 columns">
-                <legend>Choose Your Favorite</legend>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
-                <label for="pokemonRed">Red</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
-                <label for="pokemonBlue">Blue</label>
-                <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
-                <label for="pokemonYellow">Yellow</label>
-              </fieldset>
-              <fieldset class="large-6 columns">
-                <legend>Check these out</legend>
-                <input id="checkbox1" type="checkbox">
-                <label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox">
-                <label for="checkbox2">Checkbox 2</label>
-                <input id="checkbox3" type="checkbox">
-                <label for="checkbox3">Checkbox 3</label>
-              </fieldset>
-            </div>
-            <div class="row">
-              <div class="small-3 columns">
-                <label for="middle-label" class="right middle">Label</label>
-              </div>
-              <div class="small-9 columns">
-                <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-              </div>
-            </div>
-            <div class="input-group">
-              <span class="input-group-label">$</span>
-              <input class="input-group-field" type="url">
-              <a class="input-group-button button">Submit</a>
-            </div>
-          </form>
-
-          <h3>Error States</h3>
-          <form>
-  <div class="row">
-    <div class="large-6 columns">
-      <label class="error">Error
-        <input type="text" class="error" />
-      </label>
-      <small class="error">Invalid entry</small>
-    </div>
-    <div class="large-6 columns error">
-      <label class="error">Another Error
-        <input type="text" class="error" />
-      </label>
-      <small class="error">Invalid entry</small>
-    </div>
-  </div>
-  <textarea class="error" placeholder="Message..."></textarea>
-  <small class="error">Invalid entry</small>
-</form>
-        </div>
-        <div class="columns">
-
-          This is an Form
-
-        </div>
-      </div>
-      <h3>Labels</h3>
-      <div class="row align-stretch">
-        <div class="columns">
-          <span class="secondary label">Secondary Label</span>
-          <span class="success label">Success Label</span>
-          <span class="alert label">Alert Label</span>
-          <span class="warning label">Warning Label</span>
-        </div>
-        <div class="columns">
-
-          These are Labels
-
-        </div>
-
-      </div>
-    </div>
-    <br>
-
-    <script src="js/app.js"></script>
+      <script src="js/app.js"></script>
 </body>
 
 </html>

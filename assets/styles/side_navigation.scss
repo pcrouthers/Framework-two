@@ -1,0 +1,29 @@
+.side-nav {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.77778rem 0;
+  li {
+    margin: 0;
+    padding: 0;
+    a:not(.button) {
+      &:hover, &:focus {
+        background: rgba(0, 0, 0, 0.025);
+        color: #1cc7ff;
+      }
+    }
+    &.active > a:first-child:not(.button) {
+      color: #1cc7ff;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+      font-weight: normal;
+    }
+    a:not(.button) {
+      color: #008CBA;
+      display: block;
+      margin: 0;
+      padding: 0.38889rem 0.77778rem;
+    }
+  }
+}
