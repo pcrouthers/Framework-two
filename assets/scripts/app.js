@@ -1,4 +1,4 @@
-console.log('hi js is loaded !');
+
 $(document).foundation();
 
 

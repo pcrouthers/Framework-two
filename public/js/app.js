@@ -14922,7 +14922,7 @@ Foundation.Motion = Motion;
 
 }(window.Foundation, window.jQuery);
 
-console.log('hi js is loaded !');
+
 $(document).foundation();
 
 

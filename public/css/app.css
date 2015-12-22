@@ -1994,7 +1994,7 @@ select {
 .callout {
   margin: 0 0 1rem 0;
   padding: 1rem;
-  border: 0px solid rgba(10, 10, 10, 0.25);
+  border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
   background-color: white; }
@@ -3098,9 +3098,9 @@ table.hover tr:nth-of-type(even):hover {
   .top-bar::after {
     clear: both; }
   .top-bar, .top-bar ul {
-    background-color: #fff; }
+    background-color: #000; }
     .top-bar li > a, .top-bar ul li > a {
-      color: #000; }
+      color: #fff; }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }

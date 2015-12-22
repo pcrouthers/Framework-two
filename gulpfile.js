@@ -39,17 +39,14 @@ gulp.task('scripts', function() {
 
     ])
     .pipe(concat('app.js'))
+    .pipe(gulp.dest('./public/js'))
+
+    return gulp.src('./bower_components/modernizr/src/Modernizr.js')
     .pipe(gulp.dest('./public/js'));
-
-  return gulp.src('./bower_components/modernizr/modernizr.js')
-    .pipe(gulp.dest('./public/js'));
-
-
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./assets/styles/**/*.scss', ['styles']);
-  gulp.watch('./public/**/*', ['livereload']);
+gulp.task('watch', function(){
+    gulp.watch('./assets/styles/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['connect', 'watch', 'styles', 'scripts']);
+gulp.task('default',['styles','scripts']);
