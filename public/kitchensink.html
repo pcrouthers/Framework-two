@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Foundation 6 Framework</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+
+  <div class="top-bar" id="main-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Base</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+        <li class="has-submenu">
+          <a href="#">Product</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="productlisting.html">Listing Page</a></li>
+            <li><a href="productpage.html">Single Product</a></li>
+
+          </ul>
+        </li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Basket</a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="expanded row">
+    <div class="medium-9 large-10 medium-push-3 large-push-2 columns">
+      <h3>Accordion</h3>
+      <div class="row align-stretch">
+        <div class="columns">
+          <ul class="accordion" data-accordion role="tablist">
+            <li class="accordion-item is-active">
+              <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+              <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
+              <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+              <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                Content For Panel 1
+              </div>
+            </li>
+            <li class="accordion-item">
+              <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+              <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
+              <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+              <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
+                Content For Panel 1
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="columns">
+
+          This is an accordion
+
+        </div>
+      </div>
+      <h3>Form</h3>
+      <div class="row align-stretch">
+        <div class="columns">
+          <form>
+            <label>Input Label
+              <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
+            </label>
+            <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+            <label>
+              How many puppies?
+              <input type="number" value="100">
+            </label>
+            <label>
+              What books did you read over summer break?
+              <textarea placeholder="None"></textarea>
+            </label>
+            <label>Select Menu
+              <select>
+                <option value="husker">Husker</option>
+                <option value="starbuck">Starbuck</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="apollo">Apollo</option>
+              </select>
+            </label>
+            <div class="row">
+              <fieldset class="large-6 columns">
+                <legend>Choose Your Favorite</legend>
+                <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
+                <label for="pokemonRed">Red</label>
+                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+                <label for="pokemonBlue">Blue</label>
+                <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+                <label for="pokemonYellow">Yellow</label>
+              </fieldset>
+              <fieldset class="large-6 columns">
+                <legend>Check these out</legend>
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox1">Checkbox 1</label>
+                <input id="checkbox2" type="checkbox">
+                <label for="checkbox2">Checkbox 2</label>
+                <input id="checkbox3" type="checkbox">
+                <label for="checkbox3">Checkbox 3</label>
+              </fieldset>
+            </div>
+            <div class="row">
+              <div class="small-3 columns">
+                <label for="middle-label" class="right middle">Label</label>
+              </div>
+              <div class="small-9 columns">
+                <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+              </div>
+            </div>
+            <div class="input-group">
+              <span class="input-group-label">$</span>
+              <input class="input-group-field" type="url">
+              <a class="input-group-button button">Submit</a>
+            </div>
+          </form>
+
+          <h3>Error States</h3>
+          <form>
+  <div class="row">
+    <div class="large-6 columns">
+      <label class="error">Error
+        <input type="text" class="error" />
+      </label>
+      <small class="error">Invalid entry</small>
+    </div>
+    <div class="large-6 columns error">
+      <label class="error">Another Error
+        <input type="text" class="error" />
+      </label>
+      <small class="error">Invalid entry</small>
+    </div>
+  </div>
+  <textarea class="error" placeholder="Message..."></textarea>
+  <small class="error">Invalid entry</small>
+</form>
+        </div>
+        <div class="columns">
+
+          This is an Form
+
+        </div>
+      </div>
+      <h3>Labels</h3>
+      <div class="row align-stretch">
+        <div class="columns">
+          <span class="secondary label">Secondary Label</span>
+          <span class="success label">Success Label</span>
+          <span class="alert label">Alert Label</span>
+          <span class="warning label">Warning Label</span>
+        </div>
+        <div class="columns">
+
+          These are Labels
+
+        </div>
+
+      </div>
+    </div>
+    <br>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

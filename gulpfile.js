@@ -34,7 +34,7 @@ gulp.task('scripts', function() {
   gulp.src([
 
       './bower_components/foundation-sites/dist/foundation.js',
-      './bower_components/foundation-sites/js/*.js',
+      './bower_components/foundation-sites/js/*/*.js',
       './assets/scripts/app.js'
 
     ])
