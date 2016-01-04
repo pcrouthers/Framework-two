@@ -49,7 +49,7 @@
 $global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #ed1c27;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -89,7 +89,7 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: 30px;
+$grid-column-gutter: 5px;
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
@@ -541,6 +541,6 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: #000;
-$topbar-link-color: #fff;
+$topbar-background: #fff;
+$topbar-link-color: #000;
 $topbar-input-width: 200px;

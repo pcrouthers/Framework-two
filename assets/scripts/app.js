@@ -1,6 +1,10 @@
 
 $(document).foundation();
 
+jQuery("#cesar").cesar({
+  align: "right",
+  scrollable: true
+});
 
 var stickySidebar = $('.sticky');
 

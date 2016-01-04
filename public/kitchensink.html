@@ -8,10 +8,6 @@
   <link rel="stylesheet" href="css/app.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-
-
-
 </head>
 
 <body>
@@ -25,359 +21,572 @@
         <div>the content of the page needs to have wrappers</div>
       </div>
       <div class="off-canvas-content" data-off-canvas-content>
-
         <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle></button>
           <div class="title-bar-title">Menu</div>
         </div>
-
-        <div class="top-bar" id="main-menu">
+        <div class="top-bar">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text">Base</li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+              <li class="menu-text">
+                <img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
+              </li>
               <li class="has-submenu">
-                <a href="#">Product</a>
+                <a href="#">One</a>
                 <ul class="submenu menu vertical" data-submenu>
-                  <li><a href="productlisting.html">Listing Page</a></li>
-                  <li><a href="productpage.html">Single Product</a></li>
-
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
                 </ul>
               </li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="#">Basket</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+              <li>
+                <button class="button" type="button" data-toggle="example-dropdown-1">Sign In</button>
+                <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false">
+                  <p>
+                    <strong>Create an account for access to:</strong>
+                  </p>
+                  <p>Saved items in your wishlist.</p>
+                  <p>Personalized recommendations.</p>
+                  <p>Order delivery updates and return management.</p>
+                  <div class="small-12 medium-12 large-12 columns">
+                    <a class="button expanded" data-toggle="sign_in_modal" aria-controls="exampleModal11" id="xqayoq-reveal" aria-haspopup="true" tabindex="0">Sign in</a>
+                    </br>
+                    <a class="button expanded" data-toggle="create_account_modal" aria-controls="exampleModal11" id="xqayoq-reveal" aria-haspopup="true" tabindex="0">Create account</a>
+                  </div>
+              </li>
             </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li>
+                  <input type="search" placeholder="Search">
+                </li>
+                <li>
+                  <button type="button" class="button">Search</button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <br>
-
-
-        <div class="expanded row">
-          <div class="medium-9 large-7 medium-push-3 large-push-2 columns">
-            <h3>Accordion</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <ul class="accordion" data-accordion role="tablist">
-                  <li class="accordion-item is-active">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                    <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
-                      Content For Panel 1
-                    </div>
-                  </li>
-                  <li class="accordion-item">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                    <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
-                      Content For Panel 1
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <h3>Form</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <form>
-                  <label>Input Label
-                    <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
-                  </label>
-                  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-                  <label>
-                    How many puppies?
-                    <input type="number" value="100">
-                  </label>
-                  <label>
-                    What books did you read over summer break?
-                    <textarea placeholder="None"></textarea>
-                  </label>
-                  <label>Select Menu
-                    <select>
-                      <option value="husker">Husker</option>
-                      <option value="starbuck">Starbuck</option>
-                      <option value="hotdog">Hot Dog</option>
-                      <option value="apollo">Apollo</option>
-                    </select>
-                  </label>
-                  <div class="row">
-                    <fieldset class="large-6 columns">
-                      <legend>Choose Your Favorite</legend>
-                      <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
-                      <label for="pokemonRed">Red</label>
-                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
-                      <label for="pokemonBlue">Blue</label>
-                      <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
-                      <label for="pokemonYellow">Yellow</label>
-                    </fieldset>
-                    <fieldset class="large-6 columns">
-                      <legend>Check these out</legend>
-                      <input id="checkbox1" type="checkbox">
-                      <label for="checkbox1">Checkbox 1</label>
-                      <input id="checkbox2" type="checkbox">
-                      <label for="checkbox2">Checkbox 2</label>
-                      <input id="checkbox3" type="checkbox">
-                      <label for="checkbox3">Checkbox 3</label>
-                    </fieldset>
+          <br>
+          <!-- sign in modal content -->
+          <div class="reveal" id="sign_in_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
+          data-events="resize">
+            <div class="small-10 medium-12 large-12 columns">
+              <form>
+                <div class="row column log-in-form">
+                  <h4 class="text-center">Log in with you email account</h4>
+                  <div class="small-12 medium-12 large-12 columns">
+                    <label>EMAIL ADDRESS
+                      <input class="large-12 columns" type="text" placeholder="somebody@example.com">
+                    </label>
                   </div>
-                  <div class="row">
-                    <div class="small-3 columns">
-                      <label for="middle-label" class="right middle">Label</label>
-                    </div>
-                    <div class="small-9 columns">
-                      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
-                    </div>
+                  <div class="small-12 medium-12 large-12 columns">
+                    <label>PASSWORD
+                      <input class="large-12 columns" type="text" placeholder="Password">
+                    </label>
                   </div>
-                  <div class="input-group">
-                    <span class="input-group-label">$</span>
-                    <input class="input-group-field" type="url">
-                    <a class="input-group-button button">Submit</a>
+                  <fieldset class="small-7 medium-10 columns">
+                    <input id="show_password" type="checkbox">
+                    <label for="checkbox1">show password</label>
+                  </fieldset>
+                  <a type="submit" class="button expanded">Log In</a>
+                  <p class="text-center"><a href="#">Forgot your password?</a></p>
+                </div>
+              </form>
+            </div>
+            <button class="close-button" data-close="" aria-label="Close reveal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <!-- end of Sign in modal content -->
+          <!-- create accountmodal content -->
+          <div class="reveal" id="create_account_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
+          data-events="resize">
+            <div class="small-12 medium-12 large-12 columns">
+              <form>
+                <div class="row">
+                  <div class="small-12 medium-12 columns">
+                    <label>EMAIL ADDRESS
+                      <input type="text" placeholder=".medium-6.columns">
+                    </label>
                   </div>
-                </form>
-
-                <h3>Error States</h3>
-                <form>
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <label class="error">Error
-                        <input type="text" class="error" />
-                      </label>
-                      <small class="error">Invalid entry</small>
-                    </div>
-                    <div class="large-6 columns error">
-                      <label class="error">Another Error
-                        <input type="text" class="error" />
-                      </label>
-                      <small class="error">Invalid entry</small>
-                    </div>
+                  <div class="small-12 medium-6 columns">
+                    <label>PASSWORD
+                      <input type="text" placeholder=".medium-6.columns">
+                    </label>
                   </div>
-                  <textarea class="error" placeholder="Message..."></textarea>
-                  <small class="error">Invalid entry</small>
-                </form>
-              </div>
-
-            </div>
-            <h3>Labels</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <span class="secondary label">Secondary Label</span>
-                <span class="success label">Success Label</span>
-                <span class="alert label">Alert Label</span>
-                <span class="warning label">Warning Label</span>
-              </div>
-
-            </div>
-            <h3>Side Navigation</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <ul class="side-nav">
-                  <li class="active"><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
-                </ul>
-              </div>
-
-            </div>
-
-            <h3>Pagination</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <ul class="pagination" role="navigation" aria-label="Pagination">
-                  <li class="pagination-previous disabled">Previous
-                    <span class="show-for-sr">page</span>
-                  </li>
-                  <li class="current">
-                    <span class="show-for-sr">You're on page</span> 1</li>
-                  <li><a href="#" aria-label="Page 2">2</a></li>
-                  <li><a href="#" aria-label="Page 3">3</a></li>
-                  <li><a href="#" aria-label="Page 4">4</a></li>
-                  <li class="ellipsis" aria-hidden="true"></li>
-                  <li><a href="#" aria-label="Page 12">12</a></li>
-                  <li><a href="#" aria-label="Page 13">13</a></li>
-                  <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
-                </ul>
-              </div>
-
-            </div>
-            <h3>Table</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <table>
-                  <thead>
-                    <tr>
-                      <th width="200">Table Header</th>
-                      <th width="200">Table Header</th>
-                      <th width="150">Table Header</th>
-                      <th width="150">Table Header</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Content Goes Here</td>
-                      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                      <td>Content Goes Here</td>
-                      <td>Content Goes Here</td>
-                    </tr>
-                    <tr>
-                      <td>Content Goes Here</td>
-                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                      <td>Content Goes Here</td>
-                      <td>Content Goes Here</td>
-                    </tr>
-                    <tr>
-                      <td>Content Goes Here</td>
-                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                      <td>Content Goes Here</td>
-                      <td>Content Goes Here</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-            </div>
-            <h3>Thumbnails</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
-                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
-                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
-                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
-                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
-              </div>
-
-            </div>
-            <h3> Off Canvas Menu </h3>
-            <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
-
-            <h3>Tabs</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-
-                <ul class="tabs" data-tabs id="example-tabs">
-                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-                  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-                </ul>
-                <div class="tabs-content" data-tabs-content="example-tabs">
-                  <div class="tabs-panel is-active" id="panel1">
-                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl
-                      ut dapibus.
-                    </p>
+                  <div class="small-12 medium-6 columns">
+                    <label>CONFIRM PASSWORD
+                      <input type="text" placeholder=".medium-6.columns">
+                    </label>
                   </div>
-                  <div class="tabs-panel" id="panel2">
-                    <p>r neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  <div class="small-12 medium-12 columns">
+                    <p class="text-center">Must be at least SIX characters long and is case sensitive.</p>
+                  </div>
+                  <div class="small-12 medium-12 large-12 columns">
+                    <input id="checkbox1" type="checkbox">
+                    <label for="checkbox1">
+                      <p class="text-center">
+                        <strong>Subscribe to receive access our latest news and more.</strong>
+                      </p>
+                    </label>
+                    <a type="submit" class="button expanded">Create Account</a>
                   </div>
                 </div>
-
+              </form>
+            </div>
+            <button class="close-button" data-close="" aria-label="Close reveal" type="button">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <!-- end of create account modal content -->
+          <div class="expanded row">
+            <div class="columns">
+              <div id="main-menu">
+                <div class="fixed">
+                  <div id="cesar" class="cesar red">
+                    <!-- <a href="javascript:void(0)" class="cesar-brand">MegaMenu</a> -->
+                    <ul class="cesar-menu">
+                      <li class="active"><a href="#">Simple item</a></li>
+                      <li><a href="javascript:void(0)">MegaMenu 1</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a>
+                            <ul class="dropdown">
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                              <li><a href="#">SubItem</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="javascript:void(0)">MegaMenu 2</a>
+                        <div class="megamenu">
+                          <div class="megamenu-row">
+                            <div class="col12">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna.
+                                Cras non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum
+                                felis at posuere vestibulum. Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque
+                                eget odio porta, sollicitudin elit non, viverra quam. Vestibulum consectetur mauris nec tellus lacinia, vitae convallis arcu lacinia. Ut in ipsum hendrerit, sodales mauris eu, interdum turpis. Cras et sollicitudin lacus.
+                                Praesent rhoncus tincidunt sagittis. Integer et iaculis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut massa non velit tristique vestibulum non et lorem. Cras sapien nulla, sagittis in fermentum
+                                ut, placerat eget libero. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="javascript:void(0)">MegaMenu 3</a>
+                        <div class="megamenu megamenu-half-width">
+                          <div class="megamenu-row">
+                            <div class="col12">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna.
+                                Cras non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum
+                                felis at posuere vestibulum. Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque
+                                eget odio porta, sollicitudin elit non, viverra quam. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="javascript:void(0)">MegaMenu 4</a>
+                        <div class="megamenu megamenu-quarter-width">
+                          <div class="megamenu-row">
+                            <div class="col12">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna.
+                                Cras non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="height: 1px" class="scrollable-fix">
+                      </li>
+                  </div>
+                </div>
               </div>
             </div>
-            <h3> Breadcrumbs</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-                <nav aria-label="You are here:" role="navigation">
-                  <ul class="breadcrumbs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li class="disabled">Gene Splicing</li>
-                    <li>
-                      <span class="show-for-sr">Current: </span> Cloning
+          </div>
+          </br>
+
+          <div class="expanded row">
+            <div class="medium-9 large-7 medium-push-3 large-push-2 columns">
+              <h3 id="accordion">Accordion</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <ul class="accordion" data-accordion role="tablist">
+                    <li class="accordion-item is-active">
+                      <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                      <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
+                      <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                      <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                        Content For Panel 1
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                      <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
+                      <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                      <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
+                        Content For Panel 1
+                      </div>
                     </li>
                   </ul>
-                </nav>
-              </div>
-            </div>
-
-            <h3> Callouts</h3>
-            <div class="row align-stretch">
-              <div class="columns">
-
-                <div class="callout primary">
-                  <h5>This is a secondary panel</h5>
-                  <p>It has an easy to override visual style, and is appropriately subdued.</p>
-                </div>
-
-                <div class="alert callout" data-closable>
-                  <h5>This is Important!</h5>
-                  <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
-                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                  </button>
                 </div>
 
               </div>
-            </div>
+              <h3>Form validation</h3>
+              <div class="row align-stretch">
+                <div class="columns">
 
-            <h3> Buttons</h3>
-            <div class="row align-stretch">
-              <div class="columns">
 
-                <div class="button-group">
-                  <a class="button">One</a>
-                  <a class="button">Two</a>
-                  <a class="button">Three</a>
+
+                  <form data-abide novalidate>
+                    <div data-abide-error class="alert callout" style="display: none;">
+                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                    </div>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <label>Input Label
+                          <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText" required pattern="number">
+                          <span class="form-error">
+                            Yo, you had better fill this out.
+                          </span>
+                        </label>
+                        <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="medium-6 columns">
+                        <label>Input Label
+                          <input type="text" placeholder=".medium-6.columns" pattern="url">
+                        </label>
+                      </div>
+                      <div class="medium-6 columns">
+                        <label>Input Label
+                          <select id="select" required>
+                            <option value=""></option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <fieldset class="large-6 columns">
+                        <legend>Choose Your Favorite</legend>
+                        <input type="radio" name="pokemon" value="Red" id="pokemonRed">
+                        <label for="pokemonRed">Red</label>
+                        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required>
+                        <label for="pokemonBlue">Blue</label>
+                        <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+                        <label for="pokemonYellow">Yellow</label>
+                      </fieldset>
+                      <fieldset class="large-6 columns">
+                        <legend>Check these out</legend>
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1">Checkbox 1</label>
+                        <input id="checkbox2" type="checkbox" required>
+                        <label for="checkbox2">Checkbox 2</label>
+
+                      </fieldset>
+                    </div>
+                    <div class="row">
+                      <fieldset class="large-6 columns">
+                        <button class="button" type="submit" value="Submit">Submit</button>
+                      </fieldset>
+                      <fieldset class="large-6 columns">
+                        <button class="button" type="reset" value="Reset">Reset</button>
+                      </fieldset>
+                    </div>
+                  </form>
+
+
+                  <h3>Toggle Container</h3>
+                  <div clas="row align-stretch">
+                    <div class="column">
+                      <p><a data-toggle="panel">Toggle Panel</a></p>
+
+                      <div class="callout" id="panel" data-toggler data-animate="hinge-in-from-top hinge-out-from-top">
+                        <h4>Hello!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quas optio alias voluptas nobis iusto mollitia asperiores incidunt reprehenderit doloribus voluptatibus officiis minus, inventore, quasi nisi. Consequuntur, quidem.
+                          Sint, dicta?</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3>Modal with link to another Modal</h3>
+                  <div class="row align-stretch">
+                    <div class="columns">
+                      <p><a data-toggle="exampleModal11">Click me for a modal</a></p>
+
+                      <div class="reveal" id="exampleModal11" data-reveal>
+                        <h1>Awesome!</h1>
+                        <p class="lead">I have another modal inside of me!</p>
+                        <a class="button" data-toggle="exampleModal111">Click me for another modal!</a>
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="reveal" id="exampleModal111" data-reveal>
+                        <h2>ANOTHER MODAL!!!</h2>
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3>Error States</h3>
+                  <form>
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <label class="error">Error
+                          <input type="text" class="error" />
+                        </label>
+                        <small class="error">Invalid entry</small>
+                      </div>
+                      <div class="large-6 columns error">
+                        <label class="error">Another Error
+                          <input type="text" class="error" />
+                        </label>
+                        <small class="error">Invalid entry</small>
+                      </div>
+                    </div>
+                    <textarea class="error" placeholder="Message..."></textarea>
+                    <small class="error">Invalid entry</small>
+                  </form>
                 </div>
-                <br>
-                <div class="small button-group">
-                  <a class="button">Small</a>
-                  <a class="button">Button</a>
-                  <a class="button">Group</a>
+
+              </div>
+              <h3>Labels</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <span class="alert label"><i class="fi-x-circle"></i> Alert Label</span>
+                  <span class="warning label"><i class="fi-x"></i> Warning Label</span>
+                  <span class="info label"><i class="fi-widget"></i> Info Label</span>
                 </div>
-                <br>
-                <div class="button-group">
-                  <a class="secondary button">View</a>
-                  <a class="success button">Edit</a>
-                  <a class="warning button">Share</a>
-                  <a class="alert button">Delete</a>
+
+              </div>
+              <h3>Side Navigation</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <ul class="side-nav">
+                    <li class="active"><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                  </ul>
                 </div>
-                <br>
-                <div class="secondary button-group">
-                  <a class="button">Harder</a>
-                  <a class="button">Better</a>
-                  <a class="button">Faster</a>
-                  <a class="button">Stronger</a>
+
+              </div>
+
+              <h3>Pagination</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled">Previous
+                      <span class="show-for-sr">page</span>
+                    </li>
+                    <li class="current">
+                      <span class="show-for-sr">You're on page</span> 1</li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li><a href="#" aria-label="Page 3">3</a></li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="ellipsis" aria-hidden="true"></li>
+                    <li><a href="#" aria-label="Page 12">12</a></li>
+                    <li><a href="#" aria-label="Page 13">13</a></li>
+                    <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                  </ul>
                 </div>
-                <br>
-                <div class="expanded button-group">
-                  <a class="button">Expanded</a>
-                  <a class="button">Button</a>
-                  <a class="button">Group</a>
+
+              </div>
+              <h3>Table</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th width="200">Table Header</th>
+                        <th width="200">Table Header</th>
+                        <th width="150">Table Header</th>
+                        <th width="150">Table Header</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                      </tr>
+                      <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <br>
-                <div class="stacked-for-small button-group">
-                  <a class="button">How</a>
-                  <a class="button">Low</a>
-                  <a class="button">Can</a>
-                  <a class="button">You</a>
-                  <a class="button">Go</a>
+
+              </div>
+              <h3>Thumbnails</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                  <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                  <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                  <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                  <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
                 </div>
-                <br>
-                <div class="button-group">
-                  <a class="button">Primary Action</a>
-                  <a class="dropdown button arrow-only">
-                    <span class="show-for-sr">Show menu</span>
-                  </a>
+
+              </div>
+              <h3> Off Canvas Menu </h3>
+              <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+
+              <h3>Tabs</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+
+                  <ul class="tabs" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                  </ul>
+                  <div class="tabs-content" data-tabs-content="example-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                      <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl
+                        ut dapibus.
+                      </p>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                      <p>r neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                    </div>
+                  </div>
+
                 </div>
               </div>
+              <h3> Breadcrumbs</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+                  <nav aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li class="disabled">Gene Splicing</li>
+                      <li>
+                        <span class="show-for-sr">Current: </span> Cloning
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <h3> Callouts</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+
+                  <div class="callout secondary">
+                    <h5>This is a secondary panel</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                  </div>
+
+                  <div class="alert callout" data-closable>
+                    <h5>This is Important!</h5>
+                    <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+                    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+              <h3> Buttons</h3>
+              <div class="row align-stretch">
+                <div class="columns">
+
+                  <div class="button-group">
+                    <a class="button">One</a>
+                    <a class="button">Two</a>
+                    <a class="button">Three</a>
+                  </div>
+                  <br>
+                  <div class="small button-group">
+                    <a class="button">Small</a>
+                    <a class="button">Button</a>
+                    <a class="button">Group</a>
+                  </div>
+                  <br>
+                  <div class="button-group">
+                    <a class="secondary button">View</a>
+                    <a class="success button">Edit</a>
+                    <a class="warning button">Share</a>
+                    <a class="alert button">Delete</a>
+                  </div>
+                  <br>
+                  <div class="secondary button-group">
+                    <a class="button">Harder</a>
+                    <a class="button">Better</a>
+                    <a class="button">Faster</a>
+                    <a class="button">Stronger</a>
+                  </div>
+                  <br>
+                  <div class="expanded button-group">
+                    <a class="button">Expanded</a>
+                    <a class="button">Button</a>
+                    <a class="button">Group</a>
+                  </div>
+                  <br>
+                  <div class="stacked-for-small button-group">
+                    <a class="button">How</a>
+                    <a class="button">Low</a>
+                    <a class="button">Can</a>
+                    <a class="button">You</a>
+                    <a class="button">Go</a>
+                  </div>
+                  <br>
+                  <div class="button-group">
+                    <a class="button">Primary Action</a>
+                    <a class="dropdown button arrow-only">
+                      <span class="show-for-sr">Show menu</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h3>Tooltip</h3>
+              <p>
+                The
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect,
+                and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+              </p>
+
+
+
+              <!-- END OF OFF CANVAS WRAPPER -->
+
             </div>
-            <h3>Tooltip</h3>
-            <p>
-              The
-              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect,
-              and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
-            </p>
-
-            <!-- END OF OFF CANVAS WRAPPER -->
-
           </div>
         </div>
-      </div>
-      <script src="js/app.js"></script>
+
+
+        <script src="js/app.js"></script>
 </body>
 
 </html>

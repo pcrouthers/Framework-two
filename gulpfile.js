@@ -36,6 +36,7 @@ gulp.task('scripts', function() {
 
       './bower_components/foundation-sites/dist/foundation.js',
       './bower_components/foundation-sites/js/*/*.js',
+      './bower_components/cesar/cesar.js',
       './assets/scripts/app.js'
 
     ])
