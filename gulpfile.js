@@ -35,8 +35,10 @@ gulp.task('scripts', function() {
   gulp.src([
 
       './bower_components/foundation-sites/dist/foundation.js',
+      './bower_components/foundation-sites/dist/foundation.interchange.js',
       './bower_components/foundation-sites/js/*/*.js',
       './bower_components/cesar/cesar.js',
+      './bower_components/slippry/slippry.js',
       './assets/scripts/app.js'
 
     ])
@@ -52,4 +54,4 @@ gulp.task('watch', function() {
   gulp.watch('./assets/styles/**/*.scss', ['styles']);
 });
 
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('default', ['styles', 'scripts', 'livereload']);

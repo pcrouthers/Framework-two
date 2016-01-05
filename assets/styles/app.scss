@@ -4,21 +4,18 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 @include foundation-everything;
-@include foundation-flex-grid;
-
+@include foundation-grid;
 .error {
   color: #f04124;
 }
-
-p{
-  font-size:12px;
+p {
+  font-size: 12px;
 }
-
-.button-group .button{
-  margin:1px;
+.button-group .button {
+  margin: 1px;
 }
-
-pan.error, small.error {
+pan.error,
+small.error {
   display: block;
   font-size: 0.66667rem;
   font-style: italic;
@@ -29,7 +26,8 @@ pan.error, small.error {
   background: #f04124;
   color: #FFFFFF;
 }
-
-input.error, textarea.error, select.error {
+input.error,
+textarea.error,
+select.error {
   margin-bottom: 0;
 }

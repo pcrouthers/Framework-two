@@ -60,3 +60,36 @@ p.title {
     vertical-align: middle;
   }
 }
+.quantity {
+  float: left;
+  margin: 0 4px 0 0;
+  position: relative;
+  width: 74px !important;
+  input.minus {
+    position: absolute;
+    bottom: 0;
+    width: 28px !important;
+    height: 20px !important;
+    line-height: 24px !important;
+    right: 0;
+    border: none !important;
+    z-index: 100;
+    color: #fff;
+    text-shadow: none !important;
+    padding: 0 !important;
+  }
+  input.plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px !important;
+    height: 20px !important;
+    line-height: 24px !important;
+    border: none !important;
+    color: #fff;
+    text-shadow: none !important;
+    z-index: 101;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.043)!important;
+    padding: 0 !important;
+  }
+}
