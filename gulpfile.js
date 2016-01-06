@@ -3,6 +3,12 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 
+var paths = {
+  'bower': './bower_components',
+  'assets': './assets',
+  'public' : './public'
+};
+
 gulp.task('connect', function() {
   connect.server({
     root: 'public',
@@ -13,45 +19,45 @@ gulp.task('connect', function() {
 
 gulp.task('styles', function() {
   return gulp.src([
-      './assets/styles/*.scss'
+      paths.assets + '/styles/*.scss'
     ])
     .pipe(sass({
       includePaths: [
-        './bower_components/foundation-sites/scss',
-        './bower_components/motion-ui'
+        paths.bower + '/foundation-sites/scss',
+        paths.bower + '/motion-ui'
       ]
     }))
     .pipe(concat('app.css'))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest(paths.public + '/css'));
 
 });
 
 gulp.task('livereload', function() {
-  gulp.src('./public/**/*')
+  gulp.src(paths.public + '/**/*')
     .pipe(connect.reload());
 });
 
 gulp.task('scripts', function() {
   gulp.src([
 
-      './bower_components/foundation-sites/dist/foundation.js',
-      './bower_components/foundation-sites/dist/foundation.interchange.js',
-      './bower_components/foundation-sites/js/*/*.js',
-      './bower_components/cesar/cesar.js',
-      './bower_components/slippry/slippry.js',
-      './assets/scripts/app.js'
+      paths.bower + '/foundation-sites/dist/foundation.js',
+      paths.bower + '/foundation-sites/dist/foundation.interchange.js',
+      paths.bower + '/foundation-sites/js/*/*.js',
+      paths.bower + '/cesar/cesar.js',
+      paths.bower + '/slippry/slippry.js',
+      paths.assets + '/scripts/app.js'
 
     ])
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest(paths.public + '/js'))
 
-  return gulp.src('./bower_components/modernizr/src/Modernizr.js')
-    .pipe(gulp.dest('./public/js'));
+  return gulp.src(paths.bower + '/modernizr/src/Modernizr.js')
+    .pipe(gulp.dest(paths.public + '/js'));
 
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./assets/styles/**/*.scss', ['styles']);
+  gulp.watch(paths.assets + '/styles/**/*.scss', ['styles']);
 });
 
 gulp.task('default', ['styles', 'scripts', 'livereload']);
