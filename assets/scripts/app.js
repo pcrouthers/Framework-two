@@ -22,6 +22,32 @@ jQuery('.thumbs a').click(function() {
   return false;
 });
 
+// Product carousel using slippery
+jQuery('#product-caorusel').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box shop-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
+
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current slide
+  start: 4, // num (starting from 1), random
+  loop: false, // first -> last & last -> first arrows
+  captionsSrc: 'article',
+  captions: 'custom', // Position: overlay, below, custom, false
+  captionsEl: '.product-name',
+
+  // pager
+  pager: false,
+
+  // transitions
+  slideMargin: 20, // spacing between slides (in %)
+  useCSS: true,
+  transition: 'horizontal',
+
+  // slideshow
+  auto: false
+});
+
 // Mega Menu
 jQuery("#cesar").cesar({
   align: "right",

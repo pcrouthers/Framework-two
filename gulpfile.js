@@ -45,6 +45,7 @@ gulp.task('scripts', function() {
       paths.bower + '/foundation-sites/js/*/*.js',
       paths.bower + '/cesar/cesar.js',
       paths.bower + '/slippry/slippry.js',
+      paths.bower + '/masonry-layout/masonry.min.js',
       paths.assets + '/scripts/app.js'
 
     ])
