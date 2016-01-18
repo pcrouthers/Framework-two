@@ -218,288 +218,329 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="alert callout" data-closable="">
 
-          <h4 class="text-center">
-            <strong>1000s</strong> of items added every day |
-            <strong>Free delivery</strong> on all orders over £50</h4>
-          <button class="close-button" aria-label="Dismiss alert" type="button" data-close="">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <br>
+        <div class="expanded row">
+          <div class="medium-9 large-7 medium-push-3 large-push-2 columns">
+            <h3>Accordion</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="accordion" data-accordion role="tablist">
+                  <li class="accordion-item is-active">
+                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                    <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading" aria-controls="panel1d">Accordion 1</a>
+                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                    <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                      Content For Panel 1
+                    </div>
+                  </li>
+                  <li class="accordion-item">
+                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                    <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading" aria-controls="panel2d">Accordion 2</a>
+                    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+                    <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel2d-heading">
+                      Content For Panel 1
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-
-
-        <!-- BREADCRUMB-->
-
-        <div class="row small-10">
-          <nav aria-label="You are here:" role="navigation">
-            <ul class="breadcrumbs">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Features</a></li>
-              <li class="disabled">Gene Splicing</li>
-              <li>
-                <span class="show-for-sr">Current: </span> Cloning
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- MAIN PRODUCT WITH THUMBNAILS-->
-        <div class="row small-9 small-up-1 medium-8 medium-up-2 large-7 large-up-2">
-          <div class="column">
-            <ul id="thumbnails">
-              <li>
-                <a href="#slide1">
-                  <img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227111989-600x630.jpg" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#slide2">
-                  <img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227550064-600x630.jpg" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#slide3">
-                  <img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227111989.jpg" alt="">
-                </a>
-              </li>
-            </ul>
-            <div class="thumb-box">
-              <ul class="thumbs">
-                <li><a href="#1" data-slide="1"><img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227111989-600x630.jpg" alt="This is caption 1 <a href='#link'>Even with links!</a>"></a>
-                </li>
-                <li>
-                  <a href="#2" data-slide="2">
-                    <img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227550064-600x630.jpg" alt="This is caption 2">
-                  </a>
-                </li>
-                <li>
-                  <a href="#3" data-slide="3">
-                    <img src="http://themenectar.com/demo/salient-ecommerce/wp-content/uploads/2014/12/shutterstock_227111989.jpg" alt="And this is some very long caption for slide 3. Yes, really long.">
-                  </a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <!-- MAIN PRODUCT OPTIONS & DESCRIPTION-->
-          <div class="column">
-            <h2 class="product_title">Versace</h2>
-            <h5>Brushed Cotton Skinny Jeans</h5>
-            <h5 class="price">£12.99</h5>
-            <p>RRP £260.00
-              <span> Save £130 (50%)</span>
-              <div class="product_decription"></div>
+            <h3>Form</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <form>
+                  <label>Input Label
+                    <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
+                  </label>
+                  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+                  <label>
+                    How many puppies?
+                    <input type="number" value="100">
+                  </label>
+                  <label>
+                    What books did you read over summer break?
+                    <textarea placeholder="None"></textarea>
+                  </label>
+                  <label>Select Menu
+                    <select>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                  </label>
+                  <div class="row">
+                    <fieldset class="large-6 columns">
+                      <legend>Choose Your Favorite</legend>
+                      <input type="radio" name="pokemon" value="Red" id="pokemonRed" required>
+                      <label for="pokemonRed">Red</label>
+                      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
+                      <label for="pokemonBlue">Blue</label>
+                      <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">
+                      <label for="pokemonYellow">Yellow</label>
+                    </fieldset>
+                    <fieldset class="large-6 columns">
+                      <legend>Check these out</legend>
+                      <input id="checkbox1" type="checkbox">
+                      <label for="checkbox1">Checkbox 1</label>
+                      <input id="checkbox2" type="checkbox">
+                      <label for="checkbox2">Checkbox 2</label>
+                      <input id="checkbox3" type="checkbox">
+                      <label for="checkbox3">Checkbox 3</label>
+                    </fieldset>
+                  </div>
+                  <div class="row">
+                    <div class="small-3 columns">
+                      <label for="middle-label" class="right middle">Label</label>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-label">$</span>
+                    <input class="input-group-field" type="url">
+                    <a class="input-group-button button">Submit</a>
+                  </div>
+                </form>
 
-              <div class="product_options ">
-                <div class="callout secondary">
+                <h3>Error States</h3>
+                <form>
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <label class="error">Error
+                        <input type="text" class="error" />
+                      </label>
+                      <small class="error">Invalid entry</small>
+                    </div>
+                    <div class="large-6 columns error">
+                      <label class="error">Another Error
+                        <input type="text" class="error" />
+                      </label>
+                      <small class="error">Invalid entry</small>
+                    </div>
+                  </div>
+                  <textarea class="error" placeholder="Message..."></textarea>
+                  <small class="error">Invalid entry</small>
+                </form>
+              </div>
 
-                  <button class="select_size">
-                    <input type="checkbox" class="size-input">24R
-                  </button>
+            </div>
+            <h3>Labels</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <span class="secondary label">Secondary Label</span>
+                <span class="success label">Success Label</span>
+                <span class="alert label">Alert Label</span>
+                <span class="warning label">Warning Label</span>
+              </div>
 
-                  <button class="select_size">
-                    <input type="checkbox" class="size-input">24L
-                  </button>
+            </div>
+            <h3>Side Navigation</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="side-nav">
+                  <li class="active"><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                </ul>
+              </div>
 
-                  <button class="select_size">
-                    <input type="checkbox" class="size-input">32R
-                  </button>
+            </div>
 
-                  <button class="select_size">
-                    <input type="checkbox" class="size-input">32L
-                  </button>
-                  <p> ONLY 3 LEFT in the size!</p>
-                  <p>Quantitiy</p>
+            <h3>Pagination</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                  <li class="pagination-previous disabled">Previous
+                    <span class="show-for-sr">page</span>
+                  </li>
+                  <li class="current">
+                    <span class="show-for-sr">You're on page</span> 1</li>
+                  <li><a href="#" aria-label="Page 2">2</a></li>
+                  <li><a href="#" aria-label="Page 3">3</a></li>
+                  <li><a href="#" aria-label="Page 4">4</a></li>
+                  <li class="ellipsis" aria-hidden="true"></li>
+                  <li><a href="#" aria-label="Page 12">12</a></li>
+                  <li><a href="#" aria-label="Page 13">13</a></li>
+                  <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <h3>Table</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <table>
+                  <thead>
+                    <tr>
+                      <th width="200">Table Header</th>
+                      <th width="200">Table Header</th>
+                      <th width="150">Table Header</th>
+                      <th width="150">Table Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                      <td>Content Goes Here</td>
+                      <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                      <td>Content Goes Here</td>
+                      <td>Content Goes Here</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            <h3>Thumbnails</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+                <img class="thumbnail" src="http://placehold.it/100x100&text=PSR1257%20+%2012%20C" alt="Photo of Uranus.">
+              </div>
+
+            </div>
+            <h3> Off Canvas Menu </h3>
+            <button type="button" class="button" data-toggle="offCanvas">Open Menu</button>
+
+            <h3>Tabs</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <ul class="tabs" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                  <div class="tabs-panel is-active" id="panel1">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl
+                      ut dapibus.
+                    </p>
+                  </div>
+                  <div class="tabs-panel" id="panel2">
+                    <p>r neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  </div>
                 </div>
 
               </div>
-
-              <form class="cart" method="post" enctype="multipart/form-data">
-                <div class="row large-up-2">
-                  <input type="hidden" name="add-to-cart" value="34">
-                  <button type="submit" class="small-12 large-6  button">ADD TO BAG</button>
-                  <button type="submit" class="small-12 large-5 float-right  button">LOVE IT</button>
-                </div>
-              </form>
-
-
-              <!-- Product Description & Specifications accordion -->
-              <div class="row align-stretch">
-                <div class="columns">
-                  <ul class="accordion" data-accordion="gt688y-accordion" role="tablist">
-                    <li class="accordion-item is-active">
-                      <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                      <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-label" aria-controls="panel1d" aria-expanded="true" aria-selected="true">Description</a>
-                      <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                      <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content="" aria-labelledby="panel1d-label" aria-hidden="false" style="display: block;">
-                        Description Panel
-                      </div>
-                    </li>
-                    <li class="accordion-item">
-                      <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                      <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-label" aria-controls="panel2d" aria-expanded="false" aria-selected="false">Delivery</a>
-                      <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                      <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content="" aria-labelledby="panel2d-label" aria-hidden="true">
-                        Delivery Panel
-                      </div>
-                    </li>
-                    <li class="accordion-item">
-                      <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                      <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-label" aria-controls="panel3d" aria-expanded="false" aria-selected="false">Returns</a>
-                      <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
-                      <div id="panel3d" class="accordion-content" role="tabpanel" data-tab-content="" aria-labelledby="panel3d-label" aria-hidden="true">
-                        Returns Panel
-                      </div>
+            </div>
+            <h3> Breadcrumbs</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+                <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li class="disabled">Gene Splicing</li>
+                    <li>
+                      <span class="show-for-sr">Current: </span> Cloning
                     </li>
                   </ul>
+                </nav>
+              </div>
+            </div>
+
+            <h3> Callouts</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <div class="callout primary">
+                  <h5>This is a secondary panel</h5>
+                  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                </div>
+
+                <div class="alert callout" data-closable>
+                  <h5>This is Important!</h5>
+                  <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <h3> Buttons</h3>
+            <div class="row align-stretch">
+              <div class="columns">
+
+                <div class="button-group">
+                  <a class="button">One</a>
+                  <a class="button">Two</a>
+                  <a class="button">Three</a>
+                </div>
+                <br>
+                <div class="small button-group">
+                  <a class="button">Small</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                <br>
+                <div class="button-group">
+                  <a class="secondary button">View</a>
+                  <a class="success button">Edit</a>
+                  <a class="warning button">Share</a>
+                  <a class="alert button">Delete</a>
+                </div>
+                <br>
+                <div class="secondary button-group">
+                  <a class="button">Harder</a>
+                  <a class="button">Better</a>
+                  <a class="button">Faster</a>
+                  <a class="button">Stronger</a>
+                </div>
+                <br>
+                <div class="expanded button-group">
+                  <a class="button">Expanded</a>
+                  <a class="button">Button</a>
+                  <a class="button">Group</a>
+                </div>
+                <br>
+                <div class="stacked-for-small button-group">
+                  <a class="button">How</a>
+                  <a class="button">Low</a>
+                  <a class="button">Can</a>
+                  <a class="button">You</a>
+                  <a class="button">Go</a>
+                </div>
+                <br>
+                <div class="button-group">
+                  <a class="button">Primary Action</a>
+                  <a class="dropdown button arrow-only">
+                    <span class="show-for-sr">Show menu</span>
+                  </a>
                 </div>
               </div>
-          </div>
-        </div>
-        <!-- End Of PRODUCT CONTAINER -->
+            </div>
+            <h3>Tooltip</h3>
+            <p>
+              The
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect,
+              and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+            </p>
 
-        <div class="callout text-center secondary">
-          <div class="callout row small-up-1 medium-up-3 large-up-3 large-8">
-            <div class="columns small-4">
-              Free Delivery
-            </div>
-            <div class="columns small-4">
-              Free Returns to store
-            </div>
-            <div class="columns small-4">
-              click and collect
-            </div>
-          </div>
+            <!-- END OF OFF CANVAS WRAPPER -->
 
-        </div>
-        <div class="row text-center">
-          <h2>You'll Love these</h2>
-          <h5>Our best picks for you</h5>
-        </div>
-
-        <div class="row small-up-2 medium-up-3 large-up-4 large-8 columns">
-          <div class="columns">
-            <div class="card">
-              <div class="card-image">
-                <img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
-              </div>
-              <div class="card-content text-center">
-                <h7>Versace</h7>
-                <p>Skinny Jeans</p>
-                <strong>
-                  <p>£129.00</p>
-                </strong>
-                <p>RRP £260.00</p>
-                <p class="sale-price">Save £130 (50%)</p>
-              </div>
-              <!-- <div class="card-action"></div> -->
-            </div>
           </div>
-          <div class="columns">
-            <div class="card">
-              <div class="card-image">
-                <img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283240-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_ced150a8-e527-4eab-8ab8-4184ba4b629a_large.jpg?v=1426257941">
-              </div>
-              <div class="card-content text-center">
-                <h7>Versace</h7>
-                <p>Skinny Jeans</p>
-                <strong>
-                  <p>£129.00</p>
-                </strong>
-                <p>RRP £260.00</p>
-                <p class="sale-price">Save £130 (50%)</p>
-              </div>
-              <!-- <div class="card-action"></div> -->
-            </div>
-          </div>
-          <div class="columns">
-            <div class="card">
-              <div class="card-image">
-                <img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283236-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_0f70dd85-4741-41ff-939d-1aff80edc0e1_large.jpg?v=1426257941">
-              </div>
-              <div class="card-content text-center">
-                <h7>Versace</h7>
-                <p>Skinny Jeans</p>
-                <strong>
-                  <p>£129.00</p>
-                </strong>
-                <p>RRP £260.00</p>
-                <p class="sale-price">Save £130 (50%)</p>
-              </div>
-              <!-- <div class="card-action"></div> -->
-            </div>
-          </div>
-          <div class="columns">
-            <div class="card">
-              <div class="card-image">
-                <img src="http://cdn.shopify.com/s/files/1/0541/2481/products/skirt4_large.jpg?v=1426257941">
-              </div>
-              <div class="card-content text-center">
-                <h7>Versace</h7>
-                <p>Skinny Jeans</p>
-                <strong>
-                  <p>£129.00</p>
-                </strong>
-                <p>RRP £260.00</p>
-                <p class="sale-price">Save £130 (50%)</p>
-              </div>
-              <!-- <div class="card-action"></div> -->
-            </div>
-          </div>
-
         </div>
       </div>
-
-    </div>
-  </div>
-<!-- Footer -->
-<footer class="footer">
-  <div class="row full-width">
-    <div class="small-12 medium-3 large-3 columns">
-      <h4>Work With Me</h4>
-      <ul class="footer-links">
-        <li><a href="#">What I Do</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">FAQ's</a></li>
-      <ul>
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <h4>Work With Me</h4>
-      <ul class="footer-links">
-        <li><a href="#">What I Do</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">FAQ's</a></li>
-      <ul>
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <h4>Work With Me</h4>
-      <ul class="footer-links">
-        <li><a href="#">What I Do</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">FAQ's</a></li>
-      <ul>
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <h4>Follow Me</h4>
-      <ul class="footer-links">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Dribbble</a></li>
-      <ul>
-    </div>
-  </div>
-</footer>
-
       <script src="js/app.js"></script>
 </body>
 
