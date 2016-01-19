@@ -29,21 +29,20 @@
 				</div>
 				<div id="top_menu" class="top-bar">
 					<div class="top-bar-left float-left">
-
 						<ul class="dropdown menu" data-dropdown-menu>
 							<li class="menu-text show-for-medium">
-								<img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
+								<a href="/public">
+									<img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
+								</a>
 							</li>
 							<li class="has-submenu">
-								<a href="#">One</a>
+								<a href="#">Products</a>
 								<ul class="submenu menu vertical" data-submenu>
-									<li><a href="#">One</a></li>
-									<li><a href="#">Two</a></li>
-									<li><a href="#">Three</a></li>
+									<li><a href="./productlisting.html">Product Listing</a></li>
+									<li><a href="./productpage.html">Product Details</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Two</a></li>
-							<li><a href="#">Three</a></li>
+							<li><a href="./kitchensink.html">Component Library</a></li>
 							<li>
 								<button class="button" type="button" data-toggle="example-dropdown-1">Sign In</button>
 								<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false">
@@ -73,7 +72,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="expanded row">
 					<div class="columns">
 						<div id="main-menu">
@@ -145,7 +143,6 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- sign in modal content -->
 				<div class="reveal" id="sign_in_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
 				data-events="resize">
@@ -166,8 +163,8 @@
 								<fieldset class="small-7 medium-10 columns">
 									<input id="show_password" type="checkbox">
 									<label for="checkbox1">show password</label>
+										<a type="submit" class="button expanded">Log In</a>
 								</fieldset>
-								<a type="submit" class="button expanded">Log In</a>
 								<p class="text-center"><a href="#">Forgot your password?</a></p>
 							</div>
 						</form>
@@ -217,13 +214,8 @@
 						<span aria-hidden="true">×</span>
 					</button>
 				</div>
-
 				<br>
-
-
-
 				<!-- BREADCRUMB-->
-
 				<div class="row small-10">
 					<nav aria-label="You are here:" role="navigation">
 						<ul class="breadcrumbs">
@@ -236,7 +228,6 @@
 						</ul>
 					</nav>
 				</div>
-
 				<section class="main-content">
 					<div class="row text-center">
 						<h3>Just in</h3>
@@ -244,7 +235,7 @@
 					</div>
 					<!-- PRODUCT CAROUSEL -->
 					<section class="shop">
-						<div class="row small-up-1">
+						<div class="row small-up-1 large-6">
 							<div class="column">
 								<section id="product-caorusel">
 									<article title="">
@@ -315,7 +306,6 @@
 					<div class="row text-center">
 						<button class="button">Explore all</button>
 					</div>
-
 					<hr>
 				</section>
 				<div class="callout alert">
@@ -323,33 +313,318 @@
 						<h3>Get inspired for less</h3>
 						<p>our seasonal themes style and trends</p>
 					</div>
-					<!-- include 'data-columns' at the container -->
-
-						<div id="grid" data-columns class="row large-12 column">
-							<div class="column size-3of3">
-								<div class="item"><img src="http://placehold.it/370x500"></div>
-								<div class="item"><img src="http://placehold.it/370x250"></div>
-								<div class="item"><img src="http://placehold.it/370x620"></div>
-
+					<!-- include 'data-columns' at the container for masonry layouts -->
+					<div id="grid" data-columns class="row large-12 column">
+						<div class="column size-3of3">
+							<div class="item">
+								<img src="http://placehold.it/370x500">
 							</div>
-							<div class="column size-2of3">
-								<div class="item"><img src="http://placehold.it/370x400"></div>
-								<div class="item"><img src="http://placehold.it/370x200"></div>
-								<div class="item"><img src="http://placehold.it/370x400"></div>
-								<div class="item"><img src="http://placehold.it/370x250"></div>
-
+							<div class="item">
+								<img src="http://placehold.it/370x250">
 							</div>
-							<div class="column size-3of3">
-								<div class="item"><img src="http://placehold.it/370x430"></div>
-								<div class="item"><img src="http://placehold.it/370x290"></div>
-								<div class="item"><img src="http://placehold.it/370x480"></div>
+							<div class="item">
+								<img src="http://placehold.it/370x620">
 							</div>
 						</div>
-
-
+						<div class="column size-2of3">
+							<div class="item">
+								<img src="http://placehold.it/370x400">
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/370x200">
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/370x400">
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/370x250">
+							</div>
+						</div>
+						<div class="column size-3of3">
+							<div class="item">
+								<img src="http://placehold.it/370x430">
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/370x290">
+							</div>
+							<div class="item">
+								<img src="http://placehold.it/370x480">
+							</div>
+						</div>
+					</div>
 				</div>
 
-
+				<h3 class="text-center"> Mix the Maxx</h3>
+				<h5 class="text-center">Find exactly what you are looking for</h5>
+				<div class="row align-stretch large-10">
+					<div class="columns">
+						<ul class="tabs" data-tabs="853ii8-tabs" id="example-tabs">
+							<div class="row large-up-3 text-center">
+								<div class="column">
+									<li class=" tabs-title is-active" role="presentation"><a href="#panel1" aria-selected="true" role="tab" aria-controls="panel1" id="panel1-label">Under £10</a></li>
+								</div>
+								<div class="column">
+									<li class="tabs-title" role="presentation"><a href="#panel2" role="tab" aria-controls="panel2" aria-selected="false" id="panel2-label">Under £50</a></li>
+								</div>
+								<div class="column">
+									<li class="tabs-title" role="presentation"><a href="#panel3" role="tab" aria-controls="panel3" aria-selected="false" id="panel3-label">Under £100</a></li>
+								</div>
+							</div>
+						</ul>
+						<div class="tabs-content" data-tabs-content="example-tabs">
+							<div class="tabs-panel is-active" id="panel1">
+								<div class="row large-up-4 small-up-2 medium-up-3">
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-panel" id="panel2">
+								<div class="row large-up-4 small-up-2 medium-up-3">
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+									<div class="columns large-3">
+										<div class="card">
+											<div class="card-image">
+												<img src="http://cdn.shopify.com/s/files/1/0541/2481/products/photodune-5283238-beautiful-woman-with-long-sexy-legs-dressed-elegant-posing-in-the-studio-full-body-s_173f7e79-29a0-4838-8921-bfc76a13494d_large.jpg?v=1426257941">
+											</div>
+											<div class="card-content text-center">
+												<h7>Versace</h7>
+												<p>Skinny Jeans</p>
+												<strong>
+													<p>£129.00</p>
+												</strong>
+												<p>RRP £260.00</p>
+												<p class="sale-price">Save £130 (50%)</p>
+											</div>
+											<!-- <div class="card-action"></div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-panel" id="panel3">
+								<p>r neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
 				<!-- Footer -->
 				<footer class="footer">
 					<div class="row full-width">
@@ -398,5 +673,4 @@
 				<script src="js/app.js">
 				</script>
 </body>
-
 </html>
