@@ -5221,7 +5221,7 @@ p.title {
       padding-left: 90px !important; }
     .cesar-responsive .cesar-menu li .indicator {
       width: 60px;
-      height: 45px;
+      height: 42px;
       position: absolute;
       right: 0;
       top: 0;
@@ -5230,7 +5230,7 @@ p.title {
       line-height: 43px;
       border-left: solid 1px #f0f0f0; }
     .cesar-responsive .cesar-menu li ul.dropdown li .indicator {
-      height: 38px;
+      height: 40px;
       right: 0;
       top: 0;
       font-size: 12px;
@@ -5634,7 +5634,7 @@ p.title {
   background: white;
   padding: 10px;
   border: 8px solid #000;
-  margin: 250px 50px 0 50px;
+  margin: 250px 50px 0;
   width: 260px; }
 
 .sidebar_content {
