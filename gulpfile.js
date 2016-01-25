@@ -3,11 +3,22 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 
+
 var paths = {
   'bower': './bower_components',
   'assets': './assets',
   'public' : './public'
 };
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('connect', function() {
   connect.server({
