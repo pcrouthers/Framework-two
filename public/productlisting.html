@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<title> Foundation 6 Framework</title>
 	<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css">
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -43,7 +44,7 @@
 							</li>
 							<li><a href="./kitchensink.html">Component Library</a></li>
 							<li>
-								<button class="button" type="button" data-toggle="example-dropdown-1">Sign In</button>
+								<button class="button" type="button" data-toggle="example-dropdown-1"><i class="fi-torsos-all"></i></button>
 								<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false">
 									<p>
 										<strong>Create an account for access to:</strong>
@@ -59,8 +60,9 @@
 							</li>
 						</ul>
 						</div>
-						<div class="top-bar-right">
-							<button class="button" type="button" data-toggle="example-dropdown">Search</button>
+						<div class="top-bar-right float-right">
+							<button class="button" type="button"><i class="fi-shopping-cart"></i></button>
+							<button class="button" type="button" data-toggle="example-dropdown"><i class="fi-magnifying-glass"></i></button>
 							<div class="dropdown-pane float-right" id="example-dropdown" data-dropdown data-auto-focus="true">
 							  <form>
 							    <div class="row small-12 float-left">
@@ -73,15 +75,6 @@
 							    </div>
 							  </form>
 							</div>
-<!--
-							<button href="#" data-dropdown="search" aria-controls="drop1" aria-expanded="false" class="button dropdown">Search</button><br>
-<ul id="search" data-dropdown-content class="f-dropdown" aria-hidden="true">
-  <li><input type="search" placeholder="Search"></li>
-</ul> -->
-
-
-
-
 						</div>
 					</div>
 				</div>
@@ -176,12 +169,12 @@
 										<input class="large-12 columns" type="text" placeholder="Password">
 									</label>
 								</div>
-								<fieldset class="small-7 medium-10 columns">
+								<fieldset class="small-12 columns">
 									<input id="show_password" type="checkbox">
 									<label for="checkbox1">show password</label>
+										<p><a href="#">Forgot your password?</a></p>
+										<a type="submit" class="small-centered button expanded">Log In</a>
 								</fieldset>
-								<a type="submit" class="button expanded">Log In</a>
-								<p class="text-center"><a href="#">Forgot your password?</a></p>
 							</div>
 						</form>
 					</div>

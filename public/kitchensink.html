@@ -3,34 +3,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title> Foundation 6 Framework</title>
-  <link rel="stylesheet" href="css/app.css">
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<meta charset="utf-8">
+	<title> Foundation 6 Framework</title>
+	<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css">
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
 <body>
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-        <!-- OFF CANVAS CONTENT -->
-        <button class="close-button" aria-label="Close menu" type="button" data-close="">
-          <span aria-hidden="true">×</span>
-        </button>
-        <div>the content of the page needs to have wrappers</div>
-      </div>
-      <div class="off-canvas-content" data-off-canvas-content>
-        <div class="title-bar" data-responsive-toggle="top_menu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title">
-            <img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
-          </div>
-        </div>
-        <div id="top_menu" class="top-bar">
-          <div class="top-bar-left float-left">
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+			<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+				<!-- OFF CANVAS CONTENT -->
+				<button class="close-button" aria-label="Close menu" type="button" data-close="">
+					<span aria-hidden="true">×</span>
+				</button>
+				<div>the content of the page needs to have wrappers</div>
+			</div>
+			<div class="off-canvas-content" data-off-canvas-content>
+				<div class="title-bar" data-responsive-toggle="top_menu" data-hide-for="medium">
+					<button class="menu-icon" type="button" data-toggle></button>
+					<div class="title-bar-title">
+						<img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
+					</div>
+				</div>
+				<div id="top_menu" class="top-bar">
+					<div class="top-bar-left float-left">
 
-            <ul class="dropdown menu" data-dropdown-menu>
+						<ul class="dropdown menu" data-dropdown-menu>
 							<li class="menu-text show-for-medium">
 								<a href="/public"><img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img></a>
 							</li>
@@ -43,7 +44,7 @@
 							</li>
 							<li><a href="./kitchensink.html">Component Library</a></li>
 							<li>
-								<button class="button" type="button" data-toggle="example-dropdown-1">Sign In</button>
+								<button class="button" type="button" data-toggle="example-dropdown-1"><i class="fi-torsos-all"></i></button>
 								<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false">
 									<p>
 										<strong>Create an account for access to:</strong>
@@ -58,21 +59,27 @@
 									</div>
 							</li>
 						</ul>
-            </div>
-            <div class="top-bar-right float-right">
-              <ul class="menu ">
-                <li>
-                  <input type="search" placeholder="Search">
-                </li>
-                <li>
-                  <button type="button" class="button">Search</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+						</div>
+						<div class="top-bar-right float-right">
+							<button class="button" type="button"><i class="fi-shopping-cart"></i></button>
+							<button class="button" type="button" data-toggle="example-dropdown"><i class="fi-magnifying-glass"></i></button>
+							<div class="dropdown-pane float-right" id="example-dropdown" data-dropdown data-auto-focus="true">
+							  <form>
+							    <div class="row small-12 float-left">
+							      <div class="columns">
+							        <label>
+							          <input type="text" placeholder="search">
+							        </label>
+							      </div>
 
-                <div class="expanded row">
+							    </div>
+							  </form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				        <div class="expanded row">
           <div class="columns">
             <div id="main-menu">
               <div class="fixed">
@@ -145,78 +152,96 @@
           </div>
         </div>
 
-        <!-- sign in modal content -->
-        <div class="reveal" id="sign_in_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
-        data-events="resize">
-          <div class="small-10 medium-12 large-12 columns">
-            <form>
-              <div class="row column log-in-form">
-                <h4 class="text-center">Log in with you email account</h4>
-                <div class="small-12 medium-12 large-12 columns">
-                  <label>EMAIL ADDRESS
-                    <input class="large-12 columns" type="text" placeholder="somebody@example.com">
-                  </label>
-                </div>
-                <div class="small-12 medium-12 large-12 columns">
-                  <label>PASSWORD
-                    <input class="large-12 columns" type="text" placeholder="Password">
-                  </label>
-                </div>
-                <fieldset class="small-7 medium-10 columns">
-                  <input id="show_password" type="checkbox">
-                  <label for="checkbox1">show password</label>
-                </fieldset>
-                <a type="submit" class="button expanded">Log In</a>
-                <p class="text-center"><a href="#">Forgot your password?</a></p>
-              </div>
-            </form>
-          </div>
-          <button class="close-button" data-close="" aria-label="Close reveal" type="button">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <!-- end of Sign in modal content -->
-        <!-- create accountmodal content -->
-        <div class="reveal" id="create_account_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
-        data-events="resize">
-          <div class="small-12 medium-12 large-12 columns">
-            <form>
-              <div class="row">
-                <div class="small-12 medium-12 columns">
-                  <label>EMAIL ADDRESS
-                    <input type="text" placeholder=".medium-6.columns">
-                  </label>
-                </div>
-                <div class="small-12 medium-6 columns">
-                  <label>PASSWORD
-                    <input type="text" placeholder=".medium-6.columns">
-                  </label>
-                </div>
-                <div class="small-12 medium-6 columns">
-                  <label>CONFIRM PASSWORD
-                    <input type="text" placeholder=".medium-6.columns">
-                  </label>
-                </div>
-                <div class="small-12 medium-12 columns">
-                  <p class="text-center">Must be at least SIX characters long and is case sensitive.</p>
-                </div>
-                <div class="small-12 medium-12 large-12 columns">
-                  <input id="checkbox1" type="checkbox">
-                  <label for="checkbox1">
-                    <p class="text-center">
-                      <strong>Subscribe to receive access our latest news and more.</strong>
-                    </p>
-                  </label>
-                  <a type="submit" class="button expanded">Create Account</a>
-                </div>
-              </div>
-            </form>
-          </div>
-          <button class="close-button" data-close="" aria-label="Close reveal" type="button">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
+				<!-- sign in modal content -->
+				<div class="reveal" id="sign_in_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
+				data-events="resize">
+					<div class="small-10 medium-12 large-12 columns">
+						<form>
+							<div class="row column log-in-form">
+								<h4 class="text-center">Log in with you email account</h4>
+								<div class="small-12 medium-12 large-12 columns">
+									<label>EMAIL ADDRESS
+										<input class="large-12 columns" type="text" placeholder="somebody@example.com">
+									</label>
+								</div>
+								<div class="small-12 medium-12 large-12 columns">
+									<label>PASSWORD
+										<input class="large-12 columns" type="text" placeholder="Password">
+									</label>
+								</div>
+								<fieldset class="small-12 columns">
+									<input id="show_password" type="checkbox">
+									<label for="checkbox1">show password</label>
+										<p><a href="#">Forgot your password?</a></p>
+										<a type="submit" class="small-centered button expanded">Log In</a>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+					<button class="close-button" data-close="" aria-label="Close reveal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- end of Sign in modal content -->
+				<!-- create accountmodal content -->
+				<div class="reveal" id="create_account_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
+				data-events="resize">
+					<div class="small-12 medium-12 large-12 columns">
+						<form>
+							<div class="row">
+								<div class="small-12 medium-12 columns">
+									<label>EMAIL ADDRESS
+										<input type="text" placeholder=".medium-6.columns">
+									</label>
+								</div>
+								<div class="small-12 medium-6 columns">
+									<label>PASSWORD
+										<input type="text" placeholder=".medium-6.columns">
+									</label>
+								</div>
+								<div class="small-12 medium-6 columns">
+									<label>CONFIRM PASSWORD
+										<input type="text" placeholder=".medium-6.columns">
+									</label>
+								</div>
+								<div class="small-12 medium-12 columns">
+									<p class="text-center">Must be at least SIX characters long and is case sensitive.</p>
+								</div>
+								<div class="small-12 medium-12 large-12 columns">
+									<input id="checkbox1" type="checkbox">
+									<label for="checkbox1">
+										<p class="text-center">
+											<strong>Subscribe to receive access our latest news and more.</strong>
+										</p>
+									</label>
+									<a type="submit" class="button expanded">Create Account</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<button class="close-button" data-close="" aria-label="Close reveal" type="button">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
 
+				<br>
+
+
+
+				<!-- BREADCRUMB-->
+
+				<div class="row small-10">
+					<nav aria-label="You are here:" role="navigation">
+						<ul class="breadcrumbs">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Features</a></li>
+							<li class="disabled">Gene Splicing</li>
+							<li>
+								<span class="show-for-sr">Current: </span> Cloning
+							</li>
+						</ul>
+					</nav>
+				</div>
         <div class="expanded row">
           <div class="medium-9 large-7 medium-push-3 large-push-2 columns">
             <h3>Accordion</h3>
@@ -241,7 +266,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
             <h3>Form</h3>
             <div class="row align-stretch">
@@ -345,9 +369,7 @@
                   <li><a href="#">Link 4</a></li>
                 </ul>
               </div>
-
             </div>
-
             <h3>Pagination</h3>
             <div class="row align-stretch">
               <div class="columns">
@@ -533,7 +555,6 @@
               <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect,
               and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
             </p>
-
             <!-- END OF OFF CANVAS WRAPPER -->
 
           </div>

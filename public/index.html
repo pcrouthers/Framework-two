@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<title> Foundation 6 Framework</title>
 	<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css">
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -29,11 +30,10 @@
 				</div>
 				<div id="top_menu" class="top-bar">
 					<div class="top-bar-left float-left">
+
 						<ul class="dropdown menu" data-dropdown-menu>
 							<li class="menu-text show-for-medium">
-								<a href="/public">
-									<img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img>
-								</a>
+								<a href="/public"><img height="42" width="100" src="http://www.digitaslbi.com/PageFiles/50007/DigitasLBi%20Commerce%20horizontal.png"></img></a>
 							</li>
 							<li class="has-submenu">
 								<a href="#">Products</a>
@@ -44,7 +44,7 @@
 							</li>
 							<li><a href="./kitchensink.html">Component Library</a></li>
 							<li>
-								<button class="button" type="button" data-toggle="example-dropdown-1">Sign In</button>
+								<button class="button" type="button" data-toggle="example-dropdown-1"><i class="fi-torsos-all"></i></button>
 								<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false">
 									<p>
 										<strong>Create an account for access to:</strong>
@@ -61,88 +61,97 @@
 						</ul>
 						</div>
 						<div class="top-bar-right float-right">
-							<ul class="menu ">
-								<li>
-									<input type="search" placeholder="Search">
-								</li>
-								<li>
-									<button type="button" class="button">Search</button>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="expanded row">
-					<div class="columns">
-						<div id="main-menu">
-							<div class="fixed">
-								<div id="cesar" class="cesar red">
-									<!-- <a href="javascript:void(0)" class="cesar-brand">MegaMenu</a> -->
-									<ul class="cesar-menu">
-										<li class="active"><a href="#">Simple item</a></li>
-										<li><a href="javascript:void(0)">MegaMenu 1</a>
-											<ul class="dropdown">
-												<li><a href="#">Item</a></li>
-												<li><a href="#">Item</a></li>
-												<li><a href="#">Item</a></li>
-												<li><a href="#">Item</a></li>
-												<li><a href="#">Item</a>
-													<ul class="dropdown">
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-														<li><a href="#">SubItem</a></li>
-													</ul>
-												</li>
-												<li><a href="#">Item</a></li>
-												<li><a href="#">Item</a></li>
-											</ul>
-										</li>
-										<li><a href="javascript:void(0)">MegaMenu 2</a>
-											<div class="megamenu">
-												<div class="megamenu-row">
-													<div class="col12">
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras non aliquet
-															metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum felis at posuere vestibulum.
-															Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque eget odio porta, sollicitudin elit non, viverra
-															quam. Vestibulum consectetur mauris nec tellus lacinia, vitae convallis arcu lacinia. Ut in ipsum hendrerit, sodales mauris eu, interdum turpis. Cras et sollicitudin lacus. Praesent rhoncus tincidunt sagittis. Integer et iaculis arcu. Lorem
-															ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut massa non velit tristique vestibulum non et lorem. Cras sapien nulla, sagittis in fermentum ut, placerat eget libero. </p>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li><a href="javascript:void(0)">MegaMenu 3</a>
-											<div class="megamenu megamenu-half-width">
-												<div class="megamenu-row">
-													<div class="col12">
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras non aliquet
-															metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum felis at posuere vestibulum.
-															Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque eget odio porta, sollicitudin elit non, viverra
-															quam. </p>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li><a href="javascript:void(0)">MegaMenu 4</a>
-											<div class="megamenu megamenu-quarter-width">
-												<div class="megamenu-row">
-													<div class="col12">
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras non aliquet
-															metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. </p>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li style="height: 1px" class="scrollable-fix">
-										</li>
-								</div>
+							<button class="button" type="button"><i class="fi-shopping-cart"></i></button>
+							<button class="button" type="button" data-toggle="example-dropdown"><i class="fi-magnifying-glass"></i></button>
+							<div class="dropdown-pane float-right" id="example-dropdown" data-dropdown data-auto-focus="true">
+							  <form>
+							    <div class="row small-12 float-left">
+							      <div class="columns">
+							        <label>
+							          <input type="text" placeholder="search">
+							        </label>
+							      </div>
+
+							    </div>
+							  </form>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				        <div class="expanded row">
+          <div class="columns">
+            <div id="main-menu">
+              <div class="fixed">
+                <div id="cesar" class="cesar red">
+                  <!-- <a href="javascript:void(0)" class="cesar-brand">MegaMenu</a> -->
+                  <ul class="cesar-menu">
+                    <li class="active"><a href="#">Simple item</a></li>
+                    <li><a href="javascript:void(0)">MegaMenu 1</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a>
+                          <ul class="dropdown">
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                            <li><a href="#">SubItem</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">MegaMenu 2</a>
+                      <div class="megamenu">
+                        <div class="megamenu-row">
+                          <div class="col12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras
+                              non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum felis
+                              at posuere vestibulum. Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque eget
+                              odio porta, sollicitudin elit non, viverra quam. Vestibulum consectetur mauris nec tellus lacinia, vitae convallis arcu lacinia. Ut in ipsum hendrerit, sodales mauris eu, interdum turpis. Cras et sollicitudin lacus. Praesent
+                              rhoncus tincidunt sagittis. Integer et iaculis arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut massa non velit tristique vestibulum non et lorem. Cras sapien nulla, sagittis in fermentum ut, placerat
+                              eget libero. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="javascript:void(0)">MegaMenu 3</a>
+                      <div class="megamenu megamenu-half-width">
+                        <div class="megamenu-row">
+                          <div class="col12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras
+                              non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. Sed elementum felis
+                              at posuere vestibulum. Aenean eget feugiat enim, quis gravida lorem. Nullam quis lobortis odio. Donec fermentum luctus congue. Vivamus vitae pellentesque neque, tempor consequat nunc. nteger ac lobortis justo. Quisque eget
+                              odio porta, sollicitudin elit non, viverra quam. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="javascript:void(0)">MegaMenu 4</a>
+                      <div class="megamenu megamenu-quarter-width">
+                        <div class="megamenu-row">
+                          <div class="col12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus velit non facilisis. Mauris congue metus sed pretium lacinia. Donec a lobortis mauris. Pellentesque nec mattis urna, sit amet faucibus urna. Cras
+                              non aliquet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut neque mauris, commodo non placerat vitae, sodales fringilla ligula. Nulla nec augue commodo, consequat arcu vel, tempor velit. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li style="height: 1px" class="scrollable-fix">
+                    </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 				<!-- sign in modal content -->
 				<div class="reveal" id="sign_in_modal" data-reveal="fhikql-reveal" aria-labelledby="xqayoq-reveal" role="dialog" aria-hidden="true" data-yeti-box="exampleModal11" data-resize="exampleModal11" tabindex="-1" style="display: none; max-height: 597px; top: 922px; left: 50.671875px;"
 				data-events="resize">
@@ -160,12 +169,12 @@
 										<input class="large-12 columns" type="text" placeholder="Password">
 									</label>
 								</div>
-								<fieldset class="small-7 medium-10 columns">
+								<fieldset class="small-12 columns">
 									<input id="show_password" type="checkbox">
 									<label for="checkbox1">show password</label>
-										<a type="submit" class="button expanded">Log In</a>
+										<p><a href="#">Forgot your password?</a></p>
+										<a type="submit" class="small-centered button expanded">Log In</a>
 								</fieldset>
-								<p class="text-center"><a href="#">Forgot your password?</a></p>
 							</div>
 						</form>
 					</div>
@@ -214,7 +223,9 @@
 						<span aria-hidden="true">×</span>
 					</button>
 				</div>
+
 				<br>
+
 				<!-- BREADCRUMB-->
 				<div class="row small-10">
 					<nav aria-label="You are here:" role="navigation">
