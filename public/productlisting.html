@@ -59,15 +59,29 @@
 							</li>
 						</ul>
 						</div>
-						<div class="top-bar-right float-right">
-							<ul class="menu ">
-								<li>
-									<input type="search" placeholder="Search">
-								</li>
-								<li>
-									<button type="button" class="button">Search</button>
-								</li>
-							</ul>
+						<div class="top-bar-right">
+							<button class="button" type="button" data-toggle="example-dropdown">Search</button>
+							<div class="dropdown-pane float-right" id="example-dropdown" data-dropdown data-auto-focus="true">
+							  <form>
+							    <div class="row small-12 float-left">
+							      <div class="columns">
+							        <label>
+							          <input type="text" placeholder="search">
+							        </label>
+							      </div>
+
+							    </div>
+							  </form>
+							</div>
+<!--
+							<button href="#" data-dropdown="search" aria-controls="drop1" aria-expanded="false" class="button dropdown">Search</button><br>
+<ul id="search" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <li><input type="search" placeholder="Search"></li>
+</ul> -->
+
+
+
+
 						</div>
 					</div>
 				</div>

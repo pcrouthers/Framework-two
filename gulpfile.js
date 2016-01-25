@@ -41,7 +41,6 @@ gulp.task('scripts', function() {
   gulp.src([
 
       paths.bower + '/foundation-sites/dist/foundation.js',
-      paths.bower + '/foundation-sites/dist/foundation.interchange.js',
       paths.bower + '/foundation-sites/js/*/*.js',
       paths.bower + '/cesar/cesar.js',
       paths.bower + '/slippry/slippry.js',

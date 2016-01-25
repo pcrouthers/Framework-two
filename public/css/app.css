@@ -3870,7 +3870,7 @@ table.hover tr:nth-of-type(even):hover {
     .top-bar li > a, .top-bar ul li > a {
       color: #000; }
   .top-bar input {
-    width: 200px;
+    width: 100%;
     margin-right: 1rem; }
 
 @media screen and (min-width: 40em) {
@@ -6070,5 +6070,3 @@ input[type=radio] + label:before {
       .top-bar ul li a {
         color: #000;
         font-size: 12px; }
-  .top-bar input {
-    width: 180px; }
