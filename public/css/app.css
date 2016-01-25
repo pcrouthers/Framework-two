@@ -6070,3 +6070,5 @@ input[type=radio] + label:before {
       .top-bar ul li a {
         color: #000;
         font-size: 12px; }
+      .top-bar ul li a.button {
+        color: #fff; }
