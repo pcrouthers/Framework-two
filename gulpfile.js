@@ -11,14 +11,6 @@ var paths = {
 };
 
 
-gulp.task('fileinclude', function() {
-  gulp.src(['index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./'));
-});
 
 gulp.task('connect', function() {
   connect.server({
