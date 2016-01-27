@@ -9,41 +9,127 @@
 .sidebar_content {
   position: relative;
 }
-// CUSTOM SIDEBAR CHECKBOXES
-$primary-color: #ed1c27;
-input {
-  &[type=checkbox],
-  &[type=radio] {
-    opacity: 0;
+
+
+/* Base for label styling */
+
+[type="checkbox"],
+[type="radio"] {
+  &:not(:checked), &:checked {
     position: absolute;
-    &:checked + label:before {
-      background: $primary-color;
+    left: -9999px;
+  }
+  &:not(:checked) + label, &:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  &:not(:checked) + label:before, &:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+
+  }
+  &:not(:checked) + label:after, &:checked + label:after {
+    content: "\f126";
+    font-family: foundation-icons;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+  }
+  &:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  &:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  &:disabled {
+    &:not(:checked) + label:before {
+      box-shadow: none;
+      border-color: #bbb;
+      background-color: #ddd;
     }
-    & + label:before {
-      display: inline-block;
-      text-align: center;
-      line-height: 3;
-      border: 0.0625rem solid $primary-color;
-      width: 1rem;
-      height: 1rem;
-      margin-right: 0.5rem;
-      font-size: 0.875rem;
-      color: white;
-      background: white;
+    &:checked + label {
+      &:before {
+        box-shadow: none;
+        border-color: #bbb;
+        background-color: #ddd;
+      }
+      &:after {
+        color: #999;
+      }
+    }
+    + label {
+      color: #aaa;
     }
   }
-  &[type=checkbox] {
-    & + label:before {
-      content: "";
-      padding-right: 1px;
-      border-radius: 0.125rem;
-      font-size: 9px;
-    }
-  }
-  &[type=radio] {
-    & + label:before {
-      content: "";
-      border-radius: 50%;
-    }
+
+}
+
+/* checkbox aspect */
+
+/* checked mark aspect */
+
+/* checked mark aspect changes */
+
+/* disabled checkbox */
+
+/* accessibility */
+
+/* hover style just for information */
+
+label:hover:before {
+  border: 1px solid red !important;
+}
+
+/* Useless styles, just for demo design */
+
+body {
+  font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+  color: #777;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-weight: normal;
+  text-align: center;
+  margin: 5px 0 2em;
+  color: #aaa;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.txtcenter {
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: center;
+  color: #aaa;
+}
+
+.copy {
+  margin-top: 2em;
+  a {
+    text-decoration: none;
+    color: #4778d9;
   }
 }
